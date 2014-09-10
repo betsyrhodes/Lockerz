@@ -1,0 +1,17 @@
+@media print {
+
+  .container {
+    display: none;
+  }
+
+  .print-ticket {
+    display: block;
+    position: fixed;
+    top: 50px;
+    text-align: center;
+    font-size: 5em;
+    border: 2px solid #000;
+    padding: 3%;
+  }
+
+}

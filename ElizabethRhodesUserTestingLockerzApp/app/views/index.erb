@@ -1,0 +1,36 @@
+<div class="container">
+  <h1>Welcome to Locker Finder</h1>
+
+  <form id="ticket-num" action="/tickets" method="get">
+    <fieldset>
+      <legend>Find Locker by Ticket Number</legend>
+      Ticket Number: <input type="text" name="number">
+      <input type="submit" value="Find Locker">
+    </fieldset>
+  </form>
+
+  <br>
+
+  <form id="locker-size" action="/sizes" method="post">
+    <fieldset>
+      <legend>Find Empty Locker</legend>
+      Bag Size: <select name="size">
+        <option value="small">Small</option>
+        <option value="medium">Medium</option>
+        <option value="large">Large</option>
+      </select>
+      <input type="submit" value="Find Empty Locker">
+    </fieldset>
+  </form>
+
+  <br>
+
+  <div class="display-info hidden">
+    <div class="message"></div>
+    <h3 class="print"></h3>
+    <p class="button">Hide Info</p>
+  </div>
+
+</div>
+
+<div class="print-ticket hidden"></div>
